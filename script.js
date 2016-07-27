@@ -5,6 +5,7 @@ var total = 0;
 
 var updateCart = function () {
   // TODO: finish
+
 }
 
 var addItem = function (item) {
@@ -15,9 +16,13 @@ var addItem = function (item) {
 
 var clearCart = function () {
   // TODO: finish
+ //html clear...client
   $(".cart-list").empty();
   $(".total").empty();
-  // $(".total").text("0");
+  //javascript clear...database
+  cart = [];
+  total = 0;
+
 }
 
 $('.view-cart').on('click', function () {
